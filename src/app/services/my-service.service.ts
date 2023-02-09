@@ -22,4 +22,5 @@ export class MyServiceService {
   getCocktails() {
     return this.cocktails
   }
+  
 }

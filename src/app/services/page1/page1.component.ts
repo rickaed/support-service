@@ -29,4 +29,9 @@ export class Page1Component implements OnInit {
       console.log("cocktail : ", cocktail.drinks);
     }
   }
+  async getAlcool(){
+    let response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+  }
+
+  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila"
 }
