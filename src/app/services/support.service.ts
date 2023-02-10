@@ -74,7 +74,8 @@ export class AppComponent implements OnInit {
   }
   // idem autre methode Observable HTTCLIENT A IMPORTER DANS CONSTRUCTEUR ET DANS APP MODULE
     getAlcool2(){
-      this.http.get<Data>("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita").subscribe(data=>{
+      this.http.get<Data>("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+      .subscribe(data=>{
         console.log(data.drinks)//!!typage any
         data.drinks.forEach((el:any) =>console.log(el))// forEach extrait les elemnts du tableau 1 par 1
       }) //ATTENTION au typage () comme (el:any) ci dessus
